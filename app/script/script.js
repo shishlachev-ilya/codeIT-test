@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 4,
     spaceBetween: 10,
     loop: true,
+    speed: 1000,
+    effect: "slide",
     breakpoints: {
       576: {
         slidesPerView: 1
@@ -19,9 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 3
       }
     },
-    // autoplay: {
-    //   delay: 3000,
-    // }
+    autoplay: {
+      delay: 3000,
+    }
   });
 
   // m-menu
