@@ -55,6 +55,11 @@
 
 .clear {
 
+  &.disabled {
+    opacity: .5;
+    pointer-events: none;
+  }
+
   &__btn {
     display: flex;
     justify-content: center;

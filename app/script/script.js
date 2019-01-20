@@ -235,6 +235,10 @@ document.addEventListener("DOMContentLoaded", function () {
       btn.addEventListener("click", function () {
         wrap.closest(".row").remove();
         inp.value = "";
+        cards = {};
+        if(cards.length === undefined) {
+          this.closest(".clear").classList.add("disabled");
+        }
       });
     },
 

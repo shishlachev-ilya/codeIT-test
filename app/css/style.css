@@ -460,6 +460,10 @@ nav {
       .search-field input {
         width: 100%; } }
 
+.clear.disabled {
+  opacity: .5;
+  pointer-events: none; }
+
 .clear__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -835,6 +839,17 @@ nav {
       .form__wrap {
         width: 100%;
         margin: 10px 0 30px; } }
+    .form__wrap.error span {
+      position: absolute;
+      top: -15px;
+      left: 0;
+      display: block;
+      font-size: 10px;
+      color: #e24545;
+      font-weight: 400;
+      text-transform: uppercase; }
+    .form__wrap span {
+      display: none; }
   .form__field {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -905,6 +920,8 @@ nav {
       -webkit-transition: all .25s ease;
       -o-transition: all .25s ease;
       transition: all .25s ease; }
+    .form__field.error {
+      border-color: #e24545; }
   .form__submit {
     position: absolute;
     top: 50%;
